@@ -1,0 +1,502 @@
+/*=================================
+			IMPORTS
+====================================*/
+
+@import url('reset.css');
+@import url('flexslider.css');
+
+/*=================================
+			COSTUME
+====================================*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+
+h3{
+	color: #36545c;
+	font-weight: 700;
+	font-size: 2em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 100px 0 60px;
+}
+
+h4{
+	color: #1b5b64;
+	font-size: 1.5em;
+	padding-bottom: 30px;
+}
+
+img{
+	max-width: 100%;
+}
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+
+
+/*=================================
+			CLEARINGS
+====================================*/
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+.clr{clear:both;}
+
+/*=================================
+			LOADING
+====================================*/
+
+#load_screen{
+	background: #27636a;
+	opacity: 1;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 1600px;
+}
+
+#loading{
+	color: #fff;
+	width: 120px;
+	height: 24px;
+	margin: 300px auto;
+}
+
+/*=================================
+			HEADER
+====================================*/
+
+header{
+	background: #27636a;
+	padding: 20px 0;
+	width: 100%;
+}
+
+.brand{
+	text-align: center;
+	margin: 0;
+	display: block;
+	padding-bottom: 20px;
+}
+
+.brand p{
+	color: #f5ffea;
+	font-size: 0.88em;
+	text-align: center;
+	padding: 10px 0 0 0;
+}
+
+.nav{
+	text-align: center;
+}
+
+.nav li{
+	display: inline-block;
+}
+
+.nav a{
+	display: block;
+	font-size: 1.13em;
+	font-weight: 700;
+	color: #f5ffea;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	transition: 0.2s all ease-in;
+}
+
+.nav a:hover{
+	color: #cdd2aa;
+}
+
+
+
+/*=================================
+			NASLOVNA
+====================================*/
+
+#naslovna{
+	background: url(../img/naslovna-bg.jpg) no-repeat center center;
+	background-position: cover;
+	padding: 100px 0;
+	text-align: center;
+}
+
+h1{
+	color: #f5ffea;
+	font-weight: 700;
+	font-size: 48px;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	padding-bottom: 100px;
+}
+
+h1 span{
+	display: inline-block;
+	background: rgba(27,91,100,0.6);
+	padding: 0.2em 0.5em;
+}
+
+h2{
+	color: #1b5b64;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 100px;
+}
+
+#naslovna ul li{
+	display: inline-block;
+	padding: 0 20px;
+}
+
+
+.email, .tel{
+	color: #020202;
+	font-weight: 700;
+	font-size:20px;
+	letter-spacing: 1px;
+}
+
+.email img, .tel img{
+	padding:0 15px;
+}
+
+
+.tel{
+	margin-top: 30px;
+}
+
+
+/*=================================
+			O NAMA
+====================================*/
+
+#onama {
+	text-align: center;
+	background: #f5ffea;
+	padding-bottom: 100px;
+}
+
+#onama p{
+	color: #36545c;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	text-align: justify;
+	padding: 35px 0;
+}
+
+.btn-onama{
+	display: inline-block;
+	border: 2px solid #1b5b64;
+	font-size: 14px;
+	color: #1b5b64;
+	padding: 13px 30px;
+	text-transform: uppercase;
+	transition: 0.2s all ease-in;
+}
+
+.btn-onama:hover{
+	background: #1b5b64;
+	color: #f5ffea;
+}
+
+/*=================================
+			USLUGE
+====================================*/
+
+#usluge{
+	background: #fefefe; 
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+
+#usluge p{
+	font-size: 12px;
+	font-weight: 300;
+	color: #1b5b64;
+	line-height: 1.7em;
+	text-align: justify;
+	padding-bottom: 60px;
+}
+
+.middle, .last-child{
+	padding-top: 100px;
+}
+
+.icon-sprite{
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	background: transparent url(../img/icon-sprite.png) no-repeat top left;
+	border: 1px solid #1b5b64;
+    box-shadow:0 0 0 3px #add9b8;
+	-webkit-border-radius: 50px!important;
+	-moz-border-radius: 50px!important;
+	border-radius: 50px!important;
+	margin-bottom: 40px;
+}
+
+.icon-eng{
+	background-position: -75px;
+}
+
+.icon-pen{
+	background-position: -150px;
+}
+
+.btn-usluge{
+	border: 1px solid #1b5b64;
+    outline: 2px solid #add9b8;
+    box-shadow:0 0 0 3px #1b5b64;
+    font-size: 14px;
+	color: #1b5b64;
+	padding: 5px 15px;
+	text-transform: uppercase;
+	transition: 0.2s all ease-in;
+}
+
+.btn-usluge:hover{
+	background: #1b5b64;
+	color: #f5ffea;
+}
+
+
+/*=================================
+			KLIJENTI
+====================================*/
+
+#klijenti{
+	background: #add9b8;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+
+.flexslider{
+	max-width: 500px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+.flex-direction-nav a.flex-prev,
+.flex-direction-nav a.flex-next{
+	display: block;
+	position: absolute;
+	width: 33px;
+	height: 33px;
+	text-indent: -9999px;
+	bottom: 40%;
+}
+
+.flex-direction-nav a.flex-prev{
+	background: url(../img/arrow-left.png) no-repeat top left;
+	left: -21%;
+}
+
+.flex-direction-nav a.flex-next{
+	background: url(../img/arrow-right.png) no-repeat top left;
+	right: -21%;
+}
+
+/*=================================
+			KONTAKTI
+====================================*/
+
+#kontakti{
+	background: #256067;
+	padding-bottom: 100px;
+}
+
+.white{
+	color: #f5ffea;
+}
+
+.kontakt-form{
+	max-width: 550px;
+}
+
+input, textarea{
+	width: 100%;
+	height: 30px;
+	border: 3px solid #aed9b9;
+	margin-bottom: 10px;
+}
+
+input:focus, textarea:focus{
+	outline: none;
+	border-color: rgba(37,96,113,0.7);
+}
+
+textarea{
+	height: 10em;
+}
+
+ul li label{
+	display: inline-block;
+	color: #f5ffea;
+	font-size: 18px;
+	width: 100px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+.btn-submit{
+	width: 70px;
+	padding: 1% 2%;
+	color: #256067;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.2s all ease-in;
+}
+
+.btn-submit:hover{
+	background: #256067;
+	color: #aed9b9;
+}
+
+.contact-info{
+	padding-top: 50px;
+	text-align: center;
+}
+
+.contact-info ul li{
+	color: #f5ffea;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 5px 0;
+}
+
+/*=================================
+			FOOTER
+====================================*/
+footer{
+	background: #508085;
+	position: relative;
+	max-height: 100px;
+	padding: 30px 0;
+}
+
+.copy p, .social{
+	text-align: center;
+}
+
+.copy p{
+	color: #f5ffea;
+	font-size: 11px;
+	padding-bottom: 5px;
+}
+
+.facebook, .googleplus{
+	display: inline-block;
+	padding:10px 5px 0 5px;
+}
+
+.facebook:hover, .googleplus:hover{
+	opacity: 0.5;
+}
+
+.vrh{
+	display: block;
+	position: absolute;
+	bottom: 27%;
+	left: 80%;
+	background: url(../img/arrow-top.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+/*=================================
+			PRICE
+====================================*/
+
+	#table {
+		display: table;
+	 	width: 100%; 
+	 	background: #fff;
+	 	margin: 0;
+	 	box-sizing: border-box;
+	 	margin: 50px 0;
+	 }
+
+	 .header-row {
+	 	background: #add9b8;
+	 	color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+	 }
+
+	.row {
+		display: table-row;
+	}
+	
+	.row:hover{
+		background: #add9b8;
+	}
+
+	.cell {
+		display: table-cell;
+		padding: 6px; 
+		border-bottom: 1px solid #256068;
+		text-align: center;
+		font-size: 20px;
+		color: #256068;
+	}
+
+	.primary {
+		text-align: left;
+	}
+	
+	input[type="radio"],
+	input[type="checkbox"]{
+		display: none;
+	}
+
+
