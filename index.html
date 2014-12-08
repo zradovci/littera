@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Littera d.o.o</title>
+
+	<!-- CSS STYLE -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	
+	<!-- FONTS -->
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300italic,700' rel='stylesheet' type='text/css'>
+
+	<!-- SCRIPT -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/function.js"></script>
+
+	<script type="text/javascript">
+		window.addEventListener("load", function(){
+			var load_screen = document.getElementById("load_screen");
+			document.body.removeChild(load_screen);
+		});
+	</script>
+
+	<script type="text/javascript">
+
+	 	$(window).load(function() {
+	    	$('.flexslider').flexslider();
+	  	});
+
+	  	$(window).resize(function() {
+	  		if ( $(window).width() > 600 ){
+	  			$('ul.nav').removeAttr('style');
+	  		}
+	  	});
+	</script>
+
+</head>
+<body>
+	
+	<div id="load_screen">
+		<div id="loading">Loading doc</div><!--end loading-->
+	</div><!--end load-screen-->
+
+	<a name="vrh" id="vrh"></a>
+	<header>
+
+		<div class="container clearfix">
+			
+			<a href="index.html" class="brand">
+				<div class="logo"><img src="img/logo.png" alt="Logo Littera d.o.o"></div><!--end logo-->
+				<p>Računovodstvene usluge</p>
+			</a><!--end brand-->
+			
+
+			<span class="nav-btn"></span><!--Toogle navigation-->
+
+			<ul class="nav">
+				<li><a href="index.html">Naslovna</a></li>
+				<li><a href="price.html">Cijenik</a></li>
+				<li><a href="#onama">O nama</a></li>
+				<li><a href="#usluge">Usluge</a></li>
+				<li><a href="#klijenti">Klijenti</a></li>
+				<li><a href="#kontakti">Kontakti</a></li>
+
+			</ul><!--end nav-->
+
+		</div><!--end container-->
+	</header>
+
+	<section id="naslovna">
+		<div class="container">
+			<h1><span>Lorem ipsum dolor sit</span></h1>
+
+			<h2>Phasellus nec purus laoreet, porttitor nisl at, malesuada turpis,  pretium ut pharetra a, malesuada eget tellus</h2>
+
+			<ul>
+				<li class="email" id="gmail" ><a href="#kontakti"><img src="img/email-icon.png" alt=""> littera@gmail.com </a></li>
+				<li class="tel"> <img src="img/iphone-icon.png" alt=""> ( +385 ) 091 / 756-25-08 </li>
+			</ul>
+
+		</div><!--end container-->
+	</section><!--end naslovna-->
+
+	<section id="onama">
+		<div class="container">
+
+			<h3>O nama</h3>
+			
+			<div class="onama-content clearfix">
+				<div class="col-img">
+					<img src="img/profile-img.png" alt="">
+				</div><!--end col-->
+					
+				<div class="col-content">
+					<p>Donec erat justo, feugiat vitae auctor ut, consectetur non odio. Mauris finibus tristique risus, a facilisis lorem facilisis nec. Phasellus hendrerit elementum justo, nec accumsan enim sollicitudin sit amet. Sed consectetur nunc quis mauris condimentum, ac semper augue auctor. Quisque at imperdiet elit, a rutrum nisi. Donec porta porta posuere. Nullam vel aliquet augue, hendrerit commodo massa. Phasellus eget consectetur. 
+					<br />
+					Mauris. Phasellus luctus malesuada diam in volutpat. Integer euismod velit quis lorem efficitur ullamcorper. Donec diam metus, dictum eleifend ultrices id, dictum </p>
+				</div><!--end col-content-->
+			</div><!--onama-content-->
+			
+			<a href="#" class="btn-onama">Više</a>
+
+		</div><!--end container-->
+	</section><!--end onama-->
+
+	<section id="usluge">
+		<div class="container clearfix">
+
+			<h3>Usluge</h3>
+
+			<div class="col">
+				<div class="icon-cal icon-sprite"></div>
+
+				<h4>Lorem ipsum</h4>
+
+				<p>Urabitur lobortis ac libero ut tincidunt. Quisque pretium arcu nec est aliquam, imperdiet porta lectus ultricies. Mauris pellentesque ipsum at ex commodo malesuada. In in imperdiet nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia condimentum massa quis rhoncus. Vestibulum tempus blandit consequat.</p>
+				
+
+				<a href="#" class="btn-usluge">Više</a>
+			</div><!--end col-->
+
+			<div class="col middle">
+				<div class="icon-eng icon-sprite"></div>
+
+				<h4>Lorem ipsum</h4>
+
+				<p>Urabitur lobortis ac libero ut tincidunt. Quisque pretium arcu nec est aliquam, imperdiet porta lectus ultricies. Mauris pellentesque ipsum at ex commodo malesuada. In in imperdiet nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia condimentum massa quis rhoncus. Vestibulum tempus blandit consequat.</p>
+				
+				
+				<a href="#" class="btn-usluge">Više</a>
+				
+			</div><!--end col-->
+
+			<div class="col last-child">
+				<div class="icon-pen icon-sprite"></div>
+
+				<h4>Lorem ipsum</h4>
+
+				<p>Urabitur lobortis ac libero ut tincidunt. Quisque pretium arcu nec est aliquam, imperdiet porta lectus ultricies. Mauris pellentesque ipsum at ex commodo malesuada. In in imperdiet nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia condimentum massa quis rhoncus. Vestibulum tempus blandit consequat.</p>
+
+				<a href="#" class="btn-usluge">Više</a>
+			</div><!--end col-->
+
+		</div><!--end container-->
+	</section><!--end usluge-->
+
+	<section id="klijenti">
+		<div class="container">
+			
+			<h3>Klijenti</h3>
+
+			<div class="flexslider">
+
+			  <ul class="slides">
+
+			    <li>
+			      <img src="img/slide1.png" width="463" height="113"  alt="" />
+			    </li>
+
+			    <li>
+			      <img src="slide2.png" width="463" height="113" alt="" />
+			    </li>
+
+			    <li>
+			      <img src="slide2.png" width="463" height="113" alt="" />
+			    </li>
+
+			  </ul>
+
+			</div><!--end flexslider-->
+
+		</div><!--end container-->
+	</section><!--end klijenti-->
+
+	<section id="kontakti">
+		<div class="container clearfix">
+			
+			<h3 class="white">Kontakti</h3>
+
+			<div class="kontakt-form col">
+				<form>
+					<ul>	
+
+						<li>
+							<label> Vaše Ime: </label>
+							<input type="text" name="name">
+						</li>
+					
+						<li>
+							<label> Grad: </label>
+							<input type="text" name="name">
+						</li>
+
+						<li>				
+							<label> E-mail: </label>
+							<input type="email" name="email">
+						</li>
+
+						<li>
+							<label> Mobitel: </label>
+							<input type="text" name="name">
+						</li>
+
+						<li>
+							<label> Poruka: </label>
+							<textarea name="message"></textarea>
+						</li>
+
+						<li>
+							<input class="btn-submit" type="sumbit" value="Pošalji">
+						</li>
+
+					</ul>
+
+				</form>
+			</div><!--end col-->
+
+			<div class="contact-info col">
+				
+				<h4 class="white">Kontakt info</h4>
+
+				<ul>
+					<li><span></span>Mostarska 25</li>
+
+					<li><span></span>22000,Šibenik,Croatia</li>
+					
+					<li><span></span>Mobitel: (+385) 091/ 756-25-08</li>
+
+					<li><span></span>Fax: (+385) 022/ 215-658</li>
+
+					<li><span></span>E-mail: litter@gmail.com</li>
+				</ul>
+			</div><!--end col-->
+		</div><!--end container-->
+	</section><!--end kontakti-->
+
+	<footer>
+		<div class="container clearfix">
+			
+			<div class="copy">
+				<p>Copyright &copy; 2014 Frane Konjevoda</p>
+				<p>All rights reserved.</p>
+			</div><!--end copy-->
+
+			<div class="social">
+				<a href="#" class="facebook"><img src="img/face-icon.png" width="30" height="30" alt=""></a>
+				<a href="#" class="googleplus"><img src="img/googleplus-icon.png" width="30" height="30" alt=""></a>
+			</div><!--end social-->
+			
+			<a href="#vrh"><p class="vrh">Na vrh</p></a>
+		</div><!--end container-->
+	</footer>
+
+</body>
+</html>
